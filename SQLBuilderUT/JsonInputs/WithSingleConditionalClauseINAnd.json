@@ -1,0 +1,25 @@
+{
+  "TableName": "Table1",
+  "Operation": "Select",
+  "columns": [
+    {
+      "Name": "Column12"
+
+    },
+    {
+      "Name": "Column12"
+    }
+  ],
+  "ConditionalClauses": {
+    "OR": [],
+    "AND": [
+      {
+
+        "fieldName": "column1",
+        "fieldValue": "value",
+        "Operator": "Equal"
+      }
+    ]
+  }
+}
+  

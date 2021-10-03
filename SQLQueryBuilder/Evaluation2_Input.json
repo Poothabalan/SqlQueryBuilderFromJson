@@ -1,0 +1,49 @@
+{
+  "TableName": "Employee",
+  "Operation": "Select",
+  "columns": [
+    {
+      "Name": "Id"
+
+    },
+    {
+      "Name": "Name"
+    }
+  ],
+  "ConditionalClauses": {
+    "OR": [],
+    "AND": [
+      {
+
+        "fieldName": "CountryId",
+        "fieldValue": {
+          "TableName": "Table1",
+          "Operation": "Select",
+          "columns": [
+            {
+              "Name": "CountryId"
+            }
+          ],
+          "ConditionalClauses": {
+            "OR": [],
+            "AND": [
+              {
+                "fieldName": "CountryName",
+                "fieldValue": "India",
+                "Operator": "Equal"
+              }
+            ]
+          }
+        },
+        "Operator": "In"
+      },
+      {
+
+        "fieldName": "Salary",
+        "fieldValue": "50000",
+        "Operator": "GTE"
+      }
+    ]
+  }
+}
+  

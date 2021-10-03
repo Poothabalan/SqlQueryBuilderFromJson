@@ -1,0 +1,31 @@
+{
+  "TableName": "Employee",
+  "Operation": "Select",
+  "columns": [
+    {
+      "Name": "Id"
+
+    },
+    {
+      "Name": "Name"
+    }
+  ],
+  "ConditionalClauses": {
+    "OR": [],
+    "AND": [
+      {
+
+        "fieldName": "Country",
+        "fieldValue": "India",
+        "Operator": "Equal"
+      },
+      {
+
+        "fieldName": "State",
+        "fieldValue": [ "TamilNadu", "Kerala" ],
+        "Operator": "In"
+      }
+    ]
+  }
+}
+  
